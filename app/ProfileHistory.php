@@ -9,7 +9,7 @@ class ProfileHistory extends Model
     protected $guarded = array('id');
     
     public static $rules = array(
-      'user_id' => 'required',
+      'profiles_id' => 'required',
       'edited_at' => 'required',
     );
 }

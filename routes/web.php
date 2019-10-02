@@ -53,3 +53,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::post('news/edit','Admin\NewsController@update');
     Route::get('news/delete','Admin\NewsController@delete');
 });
+
+Route::get('/','NewsController@index');
+Route::get('/profile','ProfileController@index');
