@@ -62,7 +62,7 @@ class ProfileController extends Controller
       
       //課題17
       $history = new ProfileHistory;
-      $history->profiles_id = $profile->id;
+      $history->profile_id = $profile->id;
       $history->edited_at = Carbon::now();
       $history->save();
       

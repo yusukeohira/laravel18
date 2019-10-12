@@ -12,4 +12,8 @@ class ProfileHistory extends Model
       'profiles_id' => 'required',
       'edited_at' => 'required',
     );
+    
+    public function profile() {
+      return $this->belongsTo(Profile::class);
+    }
 }
